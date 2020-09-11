@@ -4,13 +4,13 @@
 
 
 <p align="center">
-  <a href="#-o-projeto">PROJETO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-usando">INSTALAÇÃO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-API's">API's</a>
+  <a href="#projeto">PROJETO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#usando">INSTALAÇÃO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#api">API's</a>
 </p>
 
 
-## O PROJETO
+## PROJETO
 
 O objetivo deste desafio é criar um projeto web para cadastrar unidades de uma usina de cana-de-açúcar em um banco de dados.
 
@@ -42,7 +42,7 @@ npm run dev
 
 O servidor irá rodar na porta `3333` 
 
-## API's
+## API
 
 #### MoinhoAPI / MillAPI
 - Criar um Moinho
