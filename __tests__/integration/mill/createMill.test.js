@@ -2,8 +2,8 @@ const request = require('supertest');
 const app = require('../../../src/server');
 const { controllerMoinho } = require('../../../src/app/controller/MillController');
 
-describe('Verificando as formas de criar Moinho', () => {
-  test('Deve ser possível criar um moinho sem colheita', async () => {
+describe('Checking the ways to create Mill', () => {
+  test('It must be possible to create a mill without harvesting', async () => {
     const response = await request(app)
       .post('/moinho')
       .send({
@@ -13,7 +13,7 @@ describe('Verificando as formas de criar Moinho', () => {
     expect(201);
   });
 
-  test('Deve ser possível criar um moinho associado a várias colheitas', () => {
+  test('It must be possible to create a mill associated with several harvests', () => {
     const moinho = await controllerMoinho.store({
       nome: `${Date.now().toString()}`
     });

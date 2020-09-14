@@ -2,8 +2,8 @@ const request = require('supertest');
 const app = require('../../../src/server');
 const { controllerFazenda } = require('../../../src/app/controller/FarmController');
 
-describe('Verificando as formas de criar uma Fazenda', () => {
-    test('Deve ser possível criar uma Fazenda sem Campo associado', () => {
+describe('Checking the ways to create a Farm', () => {
+    test('It should be possible to create a Farm without an associated Field', () => {
         const today = new Date();
         const response = request(app)
             .post('/farm')
@@ -17,7 +17,7 @@ describe('Verificando as formas de criar uma Fazenda', () => {
         expect(201);
     })
 
-    test('Deve ser possível criar várias campos associado a uma fazenda', () => {
+    test('It should be possible to create multiple fields associated with a farm', () => {
         const farm = controllerFazenda.store({
             "farms": [
                 {
