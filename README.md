@@ -12,7 +12,7 @@
 
 ## PROJETO
 
-O objetivo deste desafio é criar um projeto web para cadastrar unidades de uma usina de cana-de-açúcar em um banco de dados.
+O objetivo deste desafio é criar um projeto web para cadastrar unidades de uma usina de cana-de-açúcar em um banco de dados. <a href="https://backend-modclima.herokuapp.com/"> **Link**</a> da aplicação **back-end** hospedado no Heroku
 
 🔗 [DOCUMENTAÇÃO DO DESAFIO](https://bitbucket.org/modclima/challenge/src/master/)
 
