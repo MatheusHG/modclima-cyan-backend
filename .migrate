@@ -1,0 +1,13 @@
+{
+  "lastRun": "20200903051702-create-teste.js",
+  "migrations": [
+    {
+      "title": "20200903051612-reate.js",
+      "timestamp": 1599841375479
+    },
+    {
+      "title": "20200903051702-create-teste.js",
+      "timestamp": 1599841375532
+    }
+  ]
+}
