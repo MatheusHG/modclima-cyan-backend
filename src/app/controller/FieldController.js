@@ -1,12 +1,5 @@
 const Fields = require('../models/Fields');
 
-/**
- * Controller that manages the registration and search for the "Field".
- * 
- * @param fields, receiving one or several fields.
- * @param id_farm, Farm ID to which the Field will be associated.
- */
-
 class FieldController{
     
     async store(req, res) {
@@ -34,9 +27,6 @@ class FieldController{
                     var id = response.dataValues.id;
             }
 
-            /**
-             * @return the field id.
-             */
             return res.status(201).json({ id });
 
         } catch(err){
@@ -62,9 +52,6 @@ class FieldController{
             if(filterField.length === 0)
                 return res.status(200).json({ message: 'Field not found!' });
 
-            /**
-             * @return the search data performed.
-             */
             return res.status(200).json(filterField);
 
         } catch(err){

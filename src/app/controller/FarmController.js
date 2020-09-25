@@ -1,11 +1,6 @@
 const Farms = require('../models/Farms');
 
-/**
- * Controller that manages the registration and search for the "Farm".
- * 
- * @param farms, receiving one or several farms.
- * @param id_harvest, Harvest id to whom the farm will be associated.
- */
+
 class FarmController{
     async store(req, res) {
         /**
@@ -30,9 +25,7 @@ class FarmController{
                 if(farms[i].associate)
                     var id = response.dataValues.id;
             }
-            /**
-             * @return the farm id.
-             */
+
             return res.status(201).json({ id });
 
         } catch(err){
@@ -58,9 +51,6 @@ class FarmController{
             if(filterFarm.length === 0)
                 return res.status(200).json({ message: 'Farm not found!' });
 
-            /**
-             * @return the search data performed.
-             */
             return res.status(200).json(filterFarm);
 
         } catch(err){

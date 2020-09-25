@@ -3,10 +3,7 @@ const Harvests = require('../models/Harvests');
 /**
  * Controller that manages the registration and search for the "Harvest".
  * 
- * @param fields, receiving one or several harvests.
- * @param id_mill, Mill ID to which the Harvest will be associated.
- */
-
+*/
 class HarvestController{
     
     async store(req, res) {
@@ -26,9 +23,6 @@ class HarvestController{
                     var id = response.dataValues.id;
             }
 
-            /**
-             * @return the Harvest id.
-             */
             return res.status(201).json({ id });
 
         } catch(err){
@@ -54,9 +48,6 @@ class HarvestController{
             if(filterHarvest.length === 0)
                 return res.status(200).json({ message: 'Harvest not found!' });
 
-            /**
-             * @return the search data performed.
-             */
             return res.status(200).json(filterHarvest)
 
         } catch(err){
@@ -83,9 +74,6 @@ class HarvestController{
             if(filterHarvest.length === 0)
                 return res.status(200).json({ message: 'Harvest not found!' });
 
-            /**
-             * @return the search data performed.
-             */
             return res.status(200).json(filterHarvest)
 
         } catch(err){
